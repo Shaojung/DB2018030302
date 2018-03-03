@@ -5,11 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.ImageRequest;
-import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
     ImageView img;
@@ -34,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
 //        queue.add(request);
 //        queue.start();
 
-
+        Picasso.with(MainActivity.this).load("https://static1.squarespace.com/static/523b823ce4b0c90f4f169867/t/584f4d00e3df2821594ce4a6/1481592081752/").into(img);
     }
 }
